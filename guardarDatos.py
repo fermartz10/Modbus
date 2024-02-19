@@ -1,12 +1,12 @@
 
 import mysql.connector
-import conexion
+import conexion_cliente
 
-conexion.conectar_bd
+conexion_cliente.cliente_conectar_bd()
 
 # Función para guardar los datos en la base de datos
 def guardar_datos_en_bd(data):
-    conn = conexion.conectar_bd()
+    conn = conexion_cliente.cliente_conectar_bd()
     if conn is None:
         return
     
