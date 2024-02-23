@@ -13,7 +13,7 @@ def guardar_datos_en_bd(data):
     cursor = conn.cursor()
     try:
         for d in data:
-            cursor.execute("INSERT INTO registros (valores) VALUES (%s)", (d,))
+            cursor.execute("INSERT INTO registros (valor) VALUES (%s)", (d,))
         conn.commit()
         print("Datos guardados en la base de datos exitosamente")
     except mysql.connector.Error as err:

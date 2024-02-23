@@ -63,4 +63,3 @@ boton_salir = tk.Button(ventana, text="Salir", command=salir_aplicacion)
 boton_salir.pack()
 
 ventana.mainloop()
-

@@ -53,7 +53,7 @@ for i in range(10):
     result  = client.write_registers(int(reg), payload,\
               skip_encode=True, unit=int(address))
 
-   # read holding registers
+    # read holding registers
     rd = client.read_holding_registers(reg,len(data)).registers
     print('Read',rd)
     
